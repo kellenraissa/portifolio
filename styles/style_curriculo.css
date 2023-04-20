@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family= Krona+One & family= Montserrat:wght@400;600 & display =swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; (isso aqui era para o body ocupar 100% da página, mas como criamos um rodapé e outras coisas a mais, o body de 100% acabaria ultrapassando */
+    box-sizing:border-box;
+    background-color: #000000;
+    color: #f6f6f6;
+}
+
+h1 {
+    font-weight:bold;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%; /*cima, direito, abaixo, esquerdo*/
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22d4fd;
+    text-decoration: none;
+}
+
+.curriculo {
+    padding: 5% 15%; /* Espaçamento do conteúdo interno */
+    display: flex; /* Para que eu possa agrupar as coisas contidas e mexer todas juntas */
+    flex-direction: row;
+    align-items: flex-start; /* Alinhando o texto no centro */
+    justify-content: space-between; /* Um tipo de espaçamento entre cada coisa */
+    
+}
+
+.curriculo__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.titulo-destaque {
+    color: #22d4fd;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links {
+    display: flex; /*Pegandp um conjunto para mexer neles ao mesmo tempo*/
+    flex-direction: column; /*Fazendo com que fique em colunas*/
+    justify-content: space-between;
+    align-items: center; /*Para alinhar no centro*/
+    gap: 32px; /*Uso para gerar um espaço entre os itens*/
+}
+
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif; /*Chamando a fonte*/
+    font-weight: 400; /*O peso da fonte*/
+    font-size: 24px; /*Tamanho da fonte*/
+}
+
+.apresentacao__links__link {
+    display: flex;/*Quero que os meus elementos tenham uma disposição diferente utilizando o flexbox*/
+    justify-content: center; /*justificar os elementos no centro*/
+    gap: 16px; /*Colocando um espaçamento entre os ícones e o nome*/
+    border: 2px solid #22d4fd; /*No border eu já posso agrupar informações de espessura, o trastejado que é sólido e cor*/
+    width: 378px; /*No caso aqui é para deixar o botão maio larguinho "padding"*/
+    text-align: center;
+    border-radius: 8px; /*Deixar as extremidades da borda arredondada*/
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links__link:hover { /*Mudar a cor do botão quando o mouse passar por cima a:hover*/
+    background-color: #272727;
+
+}
+
+.rodape {
+    padding: 24px;
+    color: #000000;
+    background-color: #22d4fd;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.curriculo{
+    padding: 5% 15%; /* Espaçamento do conteúdo interno */
+    display: flex; /* Para que eu possa agrupar as coisas contidas e mexer todas juntas */
+    align-items: center; /* Alinhando o texto no centro */
+    justify-content: space-between; /* Um tipo de espaçamento entre cada coisa */
+    gap: 40px;
+}
+.curriculo__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
